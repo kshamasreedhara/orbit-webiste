@@ -1,1 +1,5 @@
-console.log("Orbit live 🚀");
+document.querySelector("button").addEventListener("click", () => {
+  document.querySelector(".products").scrollIntoView({
+    behavior: "smooth"
+  });
+});
