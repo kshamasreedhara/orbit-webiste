@@ -1,91 +1,83 @@
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background: black;
+  color: white;
   font-family: Arial;
 }
 
-body {
-  background: #000;
-  color: #fff;
-}
-
-/* NAVBAR */
-.navbar {
+/* NAV */
+.nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #111;
 }
 
 .logo {
   height: 40px;
 }
 
-.navbar a {
-  color: #fff;
+.menu a {
   margin-left: 20px;
+  color: white;
   text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  color: #ff3c3c;
-}
-
-.hero p {
-  margin: 10px 0;
-  color: #ccc;
+  font-size: 60px;
+  color: red;
 }
 
 .hero button {
-  padding: 10px 20px;
+  width: 150px;
+  padding: 10px;
   background: orange;
   border: none;
   cursor: pointer;
 }
 
+/* BRANDS */
+.brands {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #111;
+  color: grey;
+}
+
 /* PRODUCTS */
 .products {
-  padding: 40px;
-}
-
-.products h2 {
-  margin-bottom: 20px;
-}
-
-.grid {
   display: flex;
   gap: 20px;
+  padding: 40px;
   flex-wrap: wrap;
 }
 
 .card {
   background: #111;
   padding: 15px;
-  border-radius: 10px;
   width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px;
-}
-
-.card h3 {
-  margin: 10px 0;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
-  margin-top: 40px;
 }
